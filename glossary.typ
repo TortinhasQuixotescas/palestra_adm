@@ -1,12 +1,9 @@
 #let glossary-entries = (
   (
-    key: "kuleuven",
-    short: "KU Leuven",
-  ),
-  (
-    key: "unamur",
-    short: "UNamur",
-    long: "Namur University",
-    group: "Universities",
+    key: "si",
+    short: "SI",
+    plural: "SI",
+    long: "Sistema de Informação",
+    longplural: "Sistemas de Informação",
   ),
 )

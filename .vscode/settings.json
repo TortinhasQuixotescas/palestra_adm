@@ -1,0 +1,16 @@
+{
+  "[typst]": {
+    "editor.defaultFormatter": "myriad-dreamin.tinymist",
+    "editor.inlayHints.enabled": "on",
+    "editor.semanticHighlighting.enabled": true,
+    "editor.tabSize": 2,
+    "editor.wordWrap": "on"
+  },
+  "[yaml]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "latex-workshop.synctex.indicator": "none",
+  "latex-workshop.synctex.path": "",
+  "latex-workshop.view.pdf.external.synctex.args": [],
+  "tinymist.formatterMode": "typstyle"
+}

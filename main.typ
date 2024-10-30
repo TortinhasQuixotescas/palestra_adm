@@ -6,6 +6,7 @@
   region: "br",
   font: "Raleway",
   weight: "medium",
+  size: 14pt,
 )
 
 #show: make-glossary
@@ -33,11 +34,58 @@
 
 == Definição
 
-#lorem(20)
-#lorem(20)
+Conjunto de *componentes* interrelacionados que trabalham juntos para
 
-#gls("kuleuven")
+#grid(
+  columns: (1fr, 1fr),
+  rows: (auto),
+  [
+    - coletar (ou recuperar),
+    - processar,
+    - armazenar e
+    - distribuir *informação* para
+  ],
+  [
+    - suporte à tomada de decisão,
+    - coordenação,
+    - controle,
+    - análise de problemas,
+    - visualização de situações complexas e
+    - criação de novos produtos
+  ],
+)
+em uma organização @laudon2021management @zorzo2017referenciais.
+
+== Organização
+
+Organização é um conceito abrangente.
+#cite(<zorzo2017referenciais>, form: "prose") as define por dois aspectos.
+
+#grid(
+  columns: (1fr, 1fr),
+  rows: (auto),
+  [
+    *Técnico*:
+    uma estrutura social formal e estável durante um período de tempo, que utiliza e processa recursos do ambiente para a produção de novos produtos.
+  ],
+  [
+    *Comportamental*:
+    uma coleção de direitos, privilégios, obrigações e responsabilidades que são balanceadas por meio de resolução de conflitos.
+  ],
+)
+
+Os #glspl("si") apoiam não somente empresas, mas comunidades como um todo.
+
+= Conclusão
 
 == Glossário
 
 #print-glossary(glossary-entries)
+
+== Bibliografia
+
+#bibliography(
+  "bibliography.bib",
+  style: "associacao-brasileira-de-normas-tecnicas",
+  title: none,
+)
