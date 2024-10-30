@@ -1,0 +1,6 @@
+# Environment
+/.direnv
+.envrc
+
+# Build
+*.pdf
