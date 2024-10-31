@@ -32,4 +32,11 @@
     short: "IoT",
     long: "Internet das Coisas",
   ),
+  (
+    key: "der",
+    short: "DER",
+    plural: "DERs",
+    long: "Diagrama Entidade-Relacionamento",
+    longplural: "Diagramas Entidade-Relacionamento",
+  ),
 )

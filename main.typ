@@ -33,4 +33,8 @@
 
 #include "software_engineering.typ"
 
+#include "entity_diagram.typ"
+
+#include "operational_research.typ"
+
 #include "conclusion.typ"

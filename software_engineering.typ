@@ -86,7 +86,7 @@
   - Prototipação.
 ]
 
-== Exercício: Requisitos
+== Exercício
 
 #text(size: 18pt)[
   Imagine que você é proprietário de uma *loja de roupas* inaugurada há pouco tempo.
@@ -111,8 +111,45 @@
 
 === Necessidades
 
-#text(size:42pt)[
-  Quais 
+#align(horizon)[
+  #text(size: 36pt)[
+    Do que a sua empresa precisa para resolver esses problemas?
+  ]
 ]
 
-QR code na etiqueta
+#pagebreak()
+
+#text(size: 20pt)[
+  É possível desenvolver vários produtos para o contexto do negócio, como:
+
+  - Cadastro de clientes
+  - Cadastro de funcionários
+  - Sistema de estoque
+  - Sistemas de identificação de produtos
+  - Emissão de notas fiscais
+  - Análise de dados históricos
+  - Previsão de demanda
+]
+
+#pagebreak()
+
+#text(size: 20pt)[
+  Desenvolvimento de software é *caro*!
+
+  É preciso ponderar e priorizar as necessiades mais urgentes.
+
+  No nosso contexto, as aplicações mais prioritárias são:
+
+  - Sistema de estoque
+  - Sistemas de identificação de produtos
+]
+
+#pagebreak()
+
+#align(horizon)[
+  #text(size: 36pt)[
+    Para esse software de *estoque e identificação*, quais *requisitos* precisamos implementar?
+  ]
+]
+
+// QR code na etiqueta
