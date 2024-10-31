@@ -86,9 +86,10 @@
   Podemos delimitar que, para um bolo de 500g:
   - a quantidade de farinha deve ser pelo menos 100g e no máximo 200g;
   - a quantidade de açúcar deve ser pelo menos 50g e no máximo 100g;
+  - a quantidade de óleo deve ser menor ou igual à quantidade de leite;
   - a quantidade de ovos deve ser exatamente 2;
-  - a quantidade de óleo deve ser menor que a quantidade de leite
-  - a quantidade de óleo não deve ser menor que 50g.
+  - a quantidade de óleo não deve ser menor que 50g;
+  - a quantidade de cacau deve ser pelo menos 20g.
 ]
 
 == Modelo
