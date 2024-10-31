@@ -64,3 +64,31 @@
     )
   ]
 }
+
+#let stack(blocks) = {
+  [#diagram(
+      spacing: 8pt,
+      node((0, 0), name: <origin>),
+      {
+        let counter = 0
+        for block in blocks {
+          node(
+            (0, counter),
+            shape: shapes.hexagon,
+            fill: red
+              .lighten({
+                  -20% + 10% * counter
+                })
+              .transparentize(30%),
+            text(
+              size: 20pt,
+              weight: "bold",
+              fill: white,
+            )[#block],
+          )
+          counter = counter + 1
+        }
+      },
+    )
+  ]
+}

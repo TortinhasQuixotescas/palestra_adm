@@ -39,4 +39,14 @@
     long: "Diagrama Entidade-Relacionamento",
     longplural: "Diagramas Entidade-Relacionamento",
   ),
+  (
+    key: "po",
+    short: "PO",
+    long: "Pesquisa Operacional",
+  ),
+  (
+    key: "pl",
+    short: "PL",
+    long: "Programação Linear",
+  ),
 )

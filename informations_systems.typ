@@ -101,9 +101,27 @@
 
 == Bacharelado
 
-#text(size: 18pt)[
+O curso de Bacharelado em #gls("si") tem seus *referenciais de formação* definidos pela #gls("sbc").
 
-]
+O #cite(<mec2016dcn>, form: "prose"), estabelece nas #glspl("dcn") que é esperado dos egressos do curso que:
+
+#list(
+  [
+    possuam sólida formação em *Ciência da Computação, Matemática e Administração* \[...\]
+  ],
+  [
+    possam determinar os *requisitos*, desenvolver, evoluir e *administrar* os sistemas de informação das organizações \[...\]
+  ],
+  [
+    entendam o *contexto*, envolvendo as implicações *organizacionais e sociais*, no qual as soluções de sistemas de informação são desenvolvidas e implantadas
+  ],
+  [
+    compreendam os *modelos* e as áreas de *negócios*, atuando como agentes de mudança no contexto organizacional
+  ],
+  [
+    \[...\]
+  ],
+)
 
 #pagebreak()
 
