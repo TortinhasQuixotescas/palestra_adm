@@ -1,7 +1,8 @@
 #import "@preview/diatypst:0.1.0": *
 #import "@preview/glossarium:0.5.1": make-glossary, register-glossary, print-glossary, gls, glspl
 #import "@preview/cetz:0.3.1"
-#import "@preview/fletcher:0.5.2" as fletcher: diagram, node, edge
+
+#import "functions.typ": circles-pyramid
 
 #set text(
   lang: "pt",
@@ -80,93 +81,47 @@ Os #glspl("si", long: true) apoiam não somente empresas, mas comunidades como u
 
 == Dimensões
 
+
+
 #grid(
   columns: 2,
-  [#scale(75%)[
-      #diagram(
-        node(
-          (0pt, 0pt),
-          text(
-            "Tecnologia",
-            size: 20pt,
-            weight: "bold",
-            fill: white,
-          ),
-          radius: 80pt,
-          fill: red.transparentize(30%),
-        ),
-        node(
-          (-83.5pt, -144pt),
-          text(
-            "Pessoas",
-            size: 20pt,
-            weight: "bold",
-            fill: white,
-          ),
-          radius: 80pt,
-          fill: red.lighten(20%).transparentize(30%),
-        ),
-        node(
-          (83.5pt, -144pt),
-          text(
-            "Organizações",
-            size: 20pt,
-            weight: "bold",
-            fill: white,
-          ),
-          radius: 80pt,
-          fill: red.darken(10%).transparentize(30%),
-        ),
-      )
-    ]],
+  gutter: 2em,
   [
-    a
+    #scale(75%)[
+      #circles-pyramid(
+        "Tecnologia",
+        "Organização",
+        "Pessoas",
+      )
+    ]
+  ],
+  [
+    Tríade de *dimensões* dos #glspl("si", long: true).
+
+    As *#glspl("tic")* são utilizadas no contexto social, para melhorar a qualidade de vida das *pessoas* por meio das *organizações*.
   ],
 )
 
-#pagebreak()
+== Disciplinas
 
 #grid(
   columns: 2,
-  [#scale(75%)[
-      #diagram(
-        node(
-          (0pt, 0pt),
-          text(
-            "Computação",
-            size: 20pt,
-            weight: "bold",
-            fill: white,
-          ),
-          radius: 80pt,
-          fill: red.transparentize(30%),
-        ),
-        node(
-          (-83.5pt, -144pt),
-          text(
-            "Administração",
-            size: 20pt,
-            weight: "bold",
-            fill: white,
-          ),
-          radius: 80pt,
-          fill: red.lighten(20%).transparentize(30%),
-        ),
-        node(
-          (83.5pt, -144pt),
-          text(
-            "Pesquisa operacional",
-            size: 20pt,
-            weight: "bold",
-            fill: white,
-          ),
-          radius: 80pt,
-          fill: red.darken(10%).transparentize(30%),
-        ),
-      )
-    ]],
+  gutter: 2em,
   [
-    a
+    #scale(75%)[
+      #circles-pyramid(
+        "Computação",
+        "Administração",
+        "Pesquisa Operacional",
+      )
+    ]
+  ],
+  [
+    Tríade de *disciplinas* dos #glspl("si", long: true).
+
+    - Base teórica na *Ciência da Computação*,
+    - Formação humanística pela *Administração*,
+    - Técnica prática pela *Pesquisa Operacional*.
   ],
 )
 
