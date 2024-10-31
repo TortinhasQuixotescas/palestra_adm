@@ -4,29 +4,30 @@
 
 == Definição
 
-*Engenharia de Software* é uma disciplina que lida com todos os aspectos da produção de software @sommerville2011software.
+#text(size: 16pt)[
+  *Engenharia de Software* é uma disciplina que lida com todos os aspectos da produção de software @sommerville2011software.
 
-Apresenta quatro *atividades* fundamentais:
+  Apresenta quatro *atividades* fundamentais:
 
-#scale(90%, origin: center)[
-  #steps((
-    "Especificação",
-    "Desenvolvimento",
-    "Validação",
-    "Evolução",
-  ))
+  #scale(90%, origin: center)[
+    #steps((
+      "Especificação",
+      "Desenvolvimento",
+      "Validação",
+      "Evolução",
+    ))
+  ]
+
+  #enum[
+    *Especificação:* O que o sistema deve fazer, requisitos e restrições.
+  ][
+    *Desenvolvimento:* Projeto e programação do sistema.
+  ][
+    *Validação:* Verificação de que o sistema está fazendo o que foi especificado.
+  ][
+    *Evolução:* Mudanças e melhorias no sistema conforme novas necessidades.
+  ]
 ]
-
-#enum[
-  *Especificação:* O que o sistema deve fazer, requisitos e restrições.
-][
-  *Desenvolvimento:* Projeto e programação do sistema.
-][
-  *Validação:* Verificação de que o sistema está fazendo o que foi especificado.
-][
-  *Evolução:* Mudanças e melhorias no sistema conforme novas necessidades.
-]
-
 
 == Requisitos
 
@@ -71,3 +72,47 @@ Apresenta quatro *atividades* fundamentais:
     ],
   )
 ]
+
+#pagebreak()
+
+#text(size: 16pt)[
+  Pensar as necessidades da sua organização é essencial para compreender qual é o software mais adequado para o seu negócio.
+
+  Há diferentes métodos de elicitar (ou descobrir) os requisitos de um sistema, como:
+  - Brainstorming;
+  - Entrevistas;
+  - Questionários;
+  - Observação;
+  - Prototipação.
+]
+
+== Exercício: Requisitos
+
+#text(size: 18pt)[
+  Imagine que você é proprietário de uma *loja de roupas* inaugurada há pouco tempo.
+
+  O investimento inicial era baixo, e você optou por um controle de *estoque manual* numa primera fase.
+
+  Agora, é início de estação e o fluxo de clientes aumentou consideravelmente.
+
+  Você quer aproveitar o movimento para investir, e tem notado os seguintes *problemas*.
+]
+
+=== Problemas
+
+#text(size: 18pt)[
+  - Tem havido muitas *discrepâncias* entre o estoque de roupas na loja e o que consta nos registros em papel.
+  - Leva muito tempo para precificar e *etiquetar* os produtos.
+    - Há muitas *variações* para cada tipo de roupa, como tamanho e cor.
+    - Cada uma deve ser *escrita* no caderno de estoque.
+    - Depois, para poder etiquetar, deve-se *procurar* no caderno o preço da peça, mas os registros não estão organizados.
+  - É difícil estimar quais roupas estão *vendendo mais*.
+]
+
+=== Necessidades
+
+#text(size:42pt)[
+  Quais 
+]
+
+QR code na etiqueta
