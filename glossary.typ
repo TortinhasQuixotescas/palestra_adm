@@ -4,7 +4,7 @@
   (
     key: "si",
     short: "SI",
-    plural: "SI",
+    plural: "SIs",
     long: "Sistema de Informação",
     longplural: "Sistemas de Informação",
   ),
@@ -26,5 +26,10 @@
     plural: "DCNs",
     long: "Diretriz Curricular Nacional",
     longplural: "Diretrizes Curriculares Nacionais",
+  ),
+  (
+    key: "iot",
+    short: "IoT",
+    long: "Internet das Coisas",
   ),
 )
