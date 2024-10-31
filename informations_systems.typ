@@ -1,4 +1,5 @@
 #import "packages.typ": *
+#import "functions.typ": circles-pyramid
 
 = Sistemas de Informação
 

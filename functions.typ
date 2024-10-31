@@ -1,4 +1,4 @@
-#import "@preview/fletcher:0.5.2" as fletcher: diagram, node, edge
+#import "packages.typ": diagram, node, edge, shapes
 
 #let circles-pyramid(up, left, right) = {
   [
@@ -33,6 +33,34 @@
         radius: 80pt,
         fill: red.darken(10%).transparentize(30%),
       ),
+    )
+  ]
+}
+
+#let steps(steps) = {
+  [#diagram(
+      spacing: 8pt,
+      node((0, 0), name: <origin>),
+      {
+        let counter = 0
+        for step in steps {
+          node(
+            (counter, 0),
+            shape: shapes.chevron,
+            fill: red
+              .lighten({
+                  -20% + 10% * counter
+                })
+              .transparentize(30%),
+            text(
+              size: 20pt,
+              weight: "bold",
+              fill: white,
+            )[#step],
+          )
+          counter = counter + 1
+        }
+      },
     )
   ]
 }
