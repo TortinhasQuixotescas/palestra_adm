@@ -1,5 +1,7 @@
 #import "@preview/diatypst:0.1.0": *
 #import "@preview/glossarium:0.5.1": make-glossary, register-glossary, print-glossary, gls, glspl
+#import "@preview/cetz:0.3.1"
+#import "@preview/fletcher:0.5.2" as fletcher: diagram, node, edge
 
 #set text(
   lang: "pt",
@@ -22,7 +24,7 @@
   // Optional Styling
   ratio: 16/9,
   layout: "large",
-  title-color: red.darken(60%),
+  title-color: red.darken(20%),
   footer: true,
   counter: true,
 )
@@ -34,7 +36,7 @@
 
 == Definição
 
-Conjunto de *componentes* interrelacionados que trabalham juntos para
+#glspl("si", long:true) são um conjunto de *componentes* interrelacionados que trabalham juntos para
 
 #grid(
   columns: (1fr, 1fr),
@@ -74,7 +76,99 @@ Organização é um conceito abrangente.
   ],
 )
 
-Os #glspl("si") apoiam não somente empresas, mas comunidades como um todo.
+Os #glspl("si", long: true) apoiam não somente empresas, mas comunidades como um todo.
+
+== Dimensões
+
+#grid(
+  columns: 2,
+  [#scale(75%)[
+      #diagram(
+        node(
+          (0pt, 0pt),
+          text(
+            "Tecnologia",
+            size: 20pt,
+            weight: "bold",
+            fill: white,
+          ),
+          radius: 80pt,
+          fill: red.transparentize(30%),
+        ),
+        node(
+          (-83.5pt, -144pt),
+          text(
+            "Pessoas",
+            size: 20pt,
+            weight: "bold",
+            fill: white,
+          ),
+          radius: 80pt,
+          fill: red.lighten(20%).transparentize(30%),
+        ),
+        node(
+          (83.5pt, -144pt),
+          text(
+            "Organizações",
+            size: 20pt,
+            weight: "bold",
+            fill: white,
+          ),
+          radius: 80pt,
+          fill: red.darken(10%).transparentize(30%),
+        ),
+      )
+    ]],
+  [
+    a
+  ],
+)
+
+#pagebreak()
+
+#grid(
+  columns: 2,
+  [#scale(75%)[
+      #diagram(
+        node(
+          (0pt, 0pt),
+          text(
+            "Computação",
+            size: 20pt,
+            weight: "bold",
+            fill: white,
+          ),
+          radius: 80pt,
+          fill: red.transparentize(30%),
+        ),
+        node(
+          (-83.5pt, -144pt),
+          text(
+            "Administração",
+            size: 20pt,
+            weight: "bold",
+            fill: white,
+          ),
+          radius: 80pt,
+          fill: red.lighten(20%).transparentize(30%),
+        ),
+        node(
+          (83.5pt, -144pt),
+          text(
+            "Pesquisa operacional",
+            size: 20pt,
+            weight: "bold",
+            fill: white,
+          ),
+          radius: 80pt,
+          fill: red.darken(10%).transparentize(30%),
+        ),
+      )
+    ]],
+  [
+    a
+  ],
+)
 
 = Conclusão
 
